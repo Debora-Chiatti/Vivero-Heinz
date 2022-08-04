@@ -1,0 +1,56 @@
+// inicio footer estilo
+
+
+
+
+
+
+footer{
+    margin-top: 0%;
+    .links{
+        font-family:$font-vivero;
+		font-size: $size-title-cards;
+		text-decoration: none;
+		color: $color-main;
+        &:hover{
+            color:$color-card-title-hover;
+        }
+    }
+}
+
+.div__footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+.mb-5{
+    .d-flex{
+        border: none;
+            div{
+                p{
+                    font-family: $font-vivero;
+                    font-size: $size-text-cards;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+
+
+
+
+.text-footer{
+	font-family:  'noto serif', serif;
+	text-decoration: none;
+	color: $color-main;
+    &:hover{
+        color: $color-card-text-hover;
+    }
+}
+
+
+// Finaliza footer
