@@ -12,7 +12,7 @@ a img {
 
 .navbar-brand {
   display: flex;
-  width: 20%; }
+  width: 25%; }
 
 button img {
   display: flex;
@@ -82,7 +82,7 @@ footer {
     color: #fff; }
 
 .home {
-  background: linear-gradient(to bottom, #215240, #e4ece9);
+  background: linear-gradient(to bottom, #46755f, #3e7560);
   overflow-x: hidden;
   font-size: 62.5%; }
 
@@ -100,6 +100,7 @@ footer {
 
 .title-h1 {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   margin-top: 3%;
@@ -112,23 +113,42 @@ footer {
   margin-bottom: 0;
   justify-content: center; }
 
+.right {
+  text-align: right; }
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    .right {
+      text-align: center; } }
+
+.left {
+  text-align: left; }
+  @media screen and (min-width: 320px) and (max-width: 990px) {
+    .left {
+      text-align: center; } }
+
+.center {
+  text-align: center; }
+
 .card {
   background: none;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 2%;
+  padding: 0% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
   border: none; }
   .card .card-img-top {
     width: 80%;
-    margin-left: 10%;
-    border-radius: 5%; }
+    border-radius: 0%;
+    margin-bottom: 6%;
+    margin-left: -3%;
+    margin-right: -3%;
+    box-shadow: 1px 2px 4px 8px rgba(250, 250, 250, 0.8); }
   .card .card-body h5 {
+    display: none;
     font-family: "Noto Serif", serif;
     font-size: 2.5em;
     color: #215240; }
     .card .card-body h5:hover {
       color: #bf3341; }
   .card .card-body p {
+    display: none;
     font-family: "Noto Serif", serif;
     font-size: 2em;
     color: #215240; }
@@ -212,9 +232,7 @@ div div p {
 .main, .main__section, .main__section article, .main__section--title, .main__section--title-b {
   display: flex;
   width: 100%;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center; }
+  flex-direction: column; }
 
 .main__section {
   width: 80%; }

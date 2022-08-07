@@ -48,28 +48,49 @@
 	justify-content: center;
 }
 
+.right{
+    text-align: right;
+    @media screen and (min-width: 320px) and (max-width: 992px){
+        text-align: center;
+    }
+}
+
+.left{
+    text-align: left;
+    @media screen and (min-width: 320px) and (max-width: 990px){
+        text-align: center;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
 .card{
 	background: none;
-	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 2%;
+	padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
 	border: none;
     .card-img-top{
 	    width: 80%;
-	    margin-left: 10%;
-	    border-radius: 5%;
+	    border-radius: 0%;
+        margin-bottom: 6%;
+        margin-left: -3%;
+        margin-right: -3%;
+        box-shadow: 1px 2px 4px 8px rgba(250,250,250,0.8);
     }
     .card-body{
         h5{
+            display: none;
             font-family: $font-vivero;
 	        font-size: $size-title-cards;
 	        color: $color-main;
             &:hover{
                 color: $color-card-title-hover;
             }
-
         }
-        p{
+        p{  
+            display: none;
             font-family: $font-vivero;
 	        font-size: $size-text-cards;
 	        color: $color-main;
