@@ -11,24 +11,25 @@ footer{
         font-family:$font-vivero;
 		font-size: $size-title-cards;
 		text-decoration: none;
-		color: $color-main;
+		color: $color-card-title-hover;
         &:hover{
-            color:$color-card-title-hover;
+            color:$color-main;
         }
-    .end{
-        font-family: $font-vivero;
-        color: $color-main;
-        text-decoration: none;
-    }
     }
 }
 
 .div__footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
     padding-top: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    @media screen and (min-width: 320px) and (max-width: 990px){
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 
@@ -40,6 +41,9 @@ footer{
                     font-family: $font-vivero;
                     font-size: $size-text-cards;
                     color: $color-main;
+                    &:hover{
+                        color: $color-title-nosotros;
+                    }
                 }
             }
         }
@@ -47,13 +51,46 @@ footer{
 
 
 .text-footer{
-	font-family:  'noto serif', serif;
+	font-family:  $font-vivero;
 	text-decoration: none;
-	color: $color-main;
+	color: $color-title-nosotros;
     &:hover{
-        color: $color-card-text-hover;
+        color: $color-title-nosotros;
     }
 }
+
+.socialmedia-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+        .invitation{
+            @extend .text-footer;
+            font-size: $size-text-cards;
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: end;
+            padding-right: 5%;
+        }
+    }
+        
+.logo-sections{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-content: center;
+        a{
+            display: flex;
+            width: 40%;
+            align-self: center;
+            justify-content: center;
+        }
+        img{
+            width: 25%;
+        }
+    }
+
 
 
 
