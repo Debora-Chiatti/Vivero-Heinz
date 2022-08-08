@@ -201,7 +201,7 @@ footer {
       display: inline;
       position: absolute;
       z-index: 50; }
-      .logo-card-two:active {
+      .logo-card-two:hover {
         display: none;
         transition: 1s; } }
 
