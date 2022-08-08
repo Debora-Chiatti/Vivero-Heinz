@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 //font family
-$font-vivero: 'Noto Serif', serif;
+$font-vivero: 'Poppins', sans-serif;
 
 //font size
 $size-nav:3em;
+$size-text-main-title:5em;
 $size-title-cards:2.5em;
 $size-text-cards:2em;
 $size-text-nosotros:1.5em;
@@ -12,7 +13,7 @@ $size-text-nosotros:1.5em;
 // font color
 
 $color-index: rgb(247, 245, 244);
-$color-main: rgb(33, 82, 64);
+$color-main: rgb(247, 245, 244);
 $color-card-title-hover: rgb(191, 51, 65);
 $color-card-text-hover: #fff;
 $color-title-nosotros: rgb(250, 150, 0);

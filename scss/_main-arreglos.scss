@@ -31,7 +31,7 @@
 
 .main__section--title{
     @extend .main;
-    color: $color-index;
+    color: $color-title-nosotros;
     align-items: center;
     font-size: $size-title-cards;
     margin-top: 1%;
@@ -41,7 +41,7 @@
 
 .main__section--title-b{
     @extend .main__section--title;
-    color: $color-main;
+    color: $color-card-title-hover
 }
 
 .main__section--paragraph{

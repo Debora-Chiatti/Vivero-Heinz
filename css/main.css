@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,10 @@
   padding-right: 5%; }
 
 a img {
-  width: 20%; }
+  width: 40%; }
+  @media screen and (min-width: 320px) and (max-width: 900px) {
+    a img {
+      width: 60%; } }
 
 .navbar-brand {
   display: flex;
@@ -33,10 +36,10 @@ button img {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-right: 4%;
-  padding-left: 4%; }
+  padding-right: 2%;
+  padding-left: 2%; }
   .navbar-nav li {
-    font-family: "Noto Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3em;
     padding: 2%; }
     .navbar-nav li a {
@@ -53,12 +56,16 @@ button img {
 footer {
   margin-top: 0%; }
   footer .links {
-    font-family: "Noto Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2.5em;
     text-decoration: none;
-    color: #215240; }
+    color: #f7f5f4; }
     footer .links:hover {
       color: #bf3341; }
+    footer .links .end {
+      font-family: "Poppins", sans-serif;
+      color: #f7f5f4;
+      text-decoration: none; }
 
 .div__footer {
   display: flex;
@@ -70,19 +77,19 @@ footer {
 .mb-5 .d-flex {
   border: none; }
   .mb-5 .d-flex div p {
-    font-family: "Noto Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2em;
-    color: #215240; }
+    color: #f7f5f4; }
 
 .text-footer {
   font-family: 'noto serif', serif;
   text-decoration: none;
-  color: #215240; }
+  color: #f7f5f4; }
   .text-footer:hover {
     color: #fff; }
 
 .home {
-  background: linear-gradient(to bottom, #46755f, #3e7560);
+  background: linear-gradient(to bottom, #101110, black);
   overflow-x: hidden;
   font-size: 62.5%; }
 
@@ -101,12 +108,16 @@ footer {
 .title-h1 {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 100%;
-  justify-content: center;
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: #bf3341;
-  font-size: 3em;
-  font-family: "Noto Serif", serif; }
+  font-size: 5em;
+  font-family: "Poppins", sans-serif; }
+  @media screen and (min-width: 320px) and (max-width: 800px) {
+    .title-h1 {
+      font-size: 3em; } }
 
 .section-card {
   background: transparent;
@@ -131,29 +142,37 @@ footer {
 .card {
   background: none;
   padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%;
+  margin-left: -2%;
+  margin-right: -2%;
   border: none; }
   .card .card-img-top {
     width: 80%;
     border-radius: 0%;
     margin-bottom: 6%;
-    margin-left: -3%;
-    margin-right: -3%;
+    margin-left: 10%;
+    margin-right: 12%;
     box-shadow: 1px 2px 4px 8px rgba(250, 250, 250, 0.8); }
-  .card .card-body h5 {
+
+.logo-card {
+  position: absolute;
+  z-index: 50; }
+  @media screen and (min-width: 320px) and (max-width: 990px) {
+    .logo-card {
+      display: none; } }
+  .logo-card:active {
     display: none;
-    font-family: "Noto Serif", serif;
-    font-size: 2.5em;
-    color: #215240; }
-    .card .card-body h5:hover {
-      color: #bf3341; }
-  .card .card-body p {
-    display: none;
-    font-family: "Noto Serif", serif;
-    font-size: 2em;
-    color: #215240; }
-    .card .card-body p:hover {
-      color: #fff; }
+    transition: 1s; }
+
+.logo-card-two {
+  display: none; }
+  @media screen and (min-width: 320px) and (max-width: 990px) {
+    .logo-card-two {
+      display: inline;
+      position: absolute;
+      z-index: 50; }
+      .logo-card-two:active {
+        display: none;
+        transition: 1s; } }
 
 .main-page {
   display: flex;
@@ -176,9 +195,16 @@ footer {
 
 .cards-sucu-2 .card img {
   border: 2px solid #e4ece9; }
+  @media screen and (min-width: 320px) and (max-width: 990px) {
+    .cards-sucu-2 .card img {
+      margin-bottom: 1%;
+      margin-top: 2%; } }
 
 .cards-sucu-2 .card .card-body p {
-  color: #215240; }
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  color: #f7f5f4; }
   .cards-sucu-2 .card .card-body p:hover {
     color: #bf3341; }
 
@@ -209,7 +235,8 @@ footer {
 .main_section-nosotros img, .main_section-texto img {
   display: flex;
   text-align: center;
-  align-self: top; }
+  align-self: top;
+  width: 80%; }
 
 .main_section-texto {
   justify-content: start;
@@ -225,7 +252,7 @@ div h3 {
 
 div div p {
   font-size: 1.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   color: #f7f5f4;
   margin-top: 0%; }
 
@@ -245,35 +272,35 @@ div div p {
   border: none; }
 
 .main__section--title, .main__section--title-b {
-  color: #f7f5f4;
+  color: #fa9600;
   align-items: center;
   font-size: 2.5em;
   margin-top: 1%;
   margin-bottom: 3%; }
 
 .main__section--title-b {
-  color: #215240; }
+  color: #bf3341; }
 
 .main__section--paragraph, .main__section--paragraph-b {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-self: start;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em;
   color: #f7f5f4; }
 
 .main__section--paragraph-b {
-  color: #215240; }
+  color: #f7f5f4; }
 
 .second-a, .second-b {
   justify-content: start;
   color: #f7f5f4;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em; }
 
 .second-b {
-  color: #215240; }
+  color: #f7f5f4; }
 
 .whatsapp {
   text-decoration: none;
@@ -295,12 +322,12 @@ div div p {
   font-size: 2em;
   text-decoration: none;
   text-align: center;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #bf3341;
-  border: 2px solid #215240; }
+  border: 2px solid #f7f5f4; }
   .botton:hover {
-    color: #215240; }
+    color: #f7f5f4; }
 
 .main-page-contacto {
   display: flex;
@@ -313,7 +340,7 @@ div div p {
 
 h3 {
   display: flex;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   color: #f7f5f4;
   font-size: 3em;
   margin-top: 2%;
@@ -358,24 +385,24 @@ h3 {
 
 .button-div input {
   background-color: #c7626c;
-  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
   color: #f7f5f4;
   border: 2px solid #f7f5f4; }
 
 .name {
-  background-color: #71ddb5; }
+  background-color: #f5a7ba; }
 
 .last-name {
-  background-color: #50c59a; }
+  background-color: #f0aab6; }
 
 .mail {
-  background-color: #a2e9cf; }
+  background-color: #f5c6cc; }
 
 .number {
-  background-color: #77ad99; }
+  background-color: #dfa6b2; }
 
 .writing {
-  background-color: #57c99f; }
+  background-color: #f7a4b6; }
 
 .gracias {
   display: flex;
@@ -385,11 +412,11 @@ h3 {
   width: 100%;
   margin-top: 10%; }
   .gracias h2 {
-    font-family: "Noto Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3em;
     color: #f7f5f4; }
   .gracias p {
-    font-family: "Noto Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2em;
     color: #fa9600; }
   .gracias .botton a {

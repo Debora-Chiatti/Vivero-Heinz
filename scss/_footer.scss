@@ -15,6 +15,11 @@ footer{
         &:hover{
             color:$color-card-title-hover;
         }
+    .end{
+        font-family: $font-vivero;
+        color: $color-main;
+        text-decoration: none;
+    }
     }
 }
 
@@ -41,8 +46,6 @@ footer{
     }
 
 
-
-
 .text-footer{
 	font-family:  'noto serif', serif;
 	text-decoration: none;
@@ -51,6 +54,7 @@ footer{
         color: $color-card-text-hover;
     }
 }
+
 
 
 // Finaliza footer
